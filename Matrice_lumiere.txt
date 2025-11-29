@@ -1,0 +1,46 @@
+>>> Matrice_lumiere = [['OFF' for _ in range(1000)] for _ in range(1000)]
+>>>
+>>> for i in range(887, 960):
+...     for j in range(9, 630):
+...         Matrice_lumiere[i][j] = 'ON'
+...
+>>> for i in range(454, 845):
+...     for j in range(398, 449):
+...         Matrice_lumiere[i][j] = 'ON'
+...
+>>> for i in range(539, 560):
+...     for j in range(243, 966):
+...         Matrice_lumiere[i][j] = 'OFF'
+...
+>>> for i in range(370, 677):
+...     for j in range(819, 869):
+...         Matrice_lumiere[i][j] = 'OFF'
+...
+>>> for i in range(145, 371):
+...     for j in range(40, 998):
+...         Matrice_lumiere[i][j] = 'OFF'
+...
+>>> for i in range(301, 809):
+...     for j in range(3, 454):
+...         Matrice_lumiere[i][j] = 'OFF'
+...
+>>> for i in range(351, 952):
+...     for j in range(678, 909):
+...         Matrice_lumiere[i][j] = 'ON'
+...
+>>> for i in range(720, 898):
+...     for j in range(196, 995):
+...         if Matrice_lumiere[i][j] == "ON":
+...             Matrice_lumiere[i][j] = 'OFF'
+...         else:
+...             Matrice_lumiere[i][j] = 'ON'
+...
+>>> for i in range(831, 905):
+...     for j in range(394, 861):
+...         if Matrice_lumiere[i][j] == "ON":
+...             Matrice_lumiere[i][j] = 'OFF'
+...         else:
+...             Matrice_lumiere[i][j] = 'ON'
+...
+>>> count_ON = sum(row.count('ON') for row in Matrice_lumiere)
+>>> print("Nombre de cases ON :", count_ON)
