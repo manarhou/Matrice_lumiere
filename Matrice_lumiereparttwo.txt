@@ -1,0 +1,45 @@
+ Matrice_lumiere = [[0 for _ in range(1000)] for _ in range(1000)]
+
+ for i in range(887, 960):
+     for j in range(9, 630):
+         Matrice_lumiere[i][j] = Matrice_lumiere[i][j] + 1
+
+ for i in range(454, 845):
+     for j in range(398, 449):
+         Matrice_lumiere[i][j] = Matrice_lumiere[i][j] + 1
+
+ for i in range(539, 560):
+     for j in range(243, 966):
+            if Matrice_lumiere[i][j] != 0:
+              Matrice_lumiere[i][j] = Matrice_lumiere[i][j] - 1
+
+ for i in range(370, 677):
+     for j in range(819, 869):
+         if Matrice_lumiere[i][j] != 0:
+              Matrice_lumiere[i][j] = Matrice_lumiere[i][j] - 1
+
+ for i in range(145, 371):
+     for j in range(40, 998):
+        if Matrice_lumiere[i][j] != 0:
+              Matrice_lumiere[i][j] = Matrice_lumiere[i][j] - 1
+
+ for i in range(301, 809):
+     for j in range(3, 454):
+         if Matrice_lumiere[i][j] != 0:
+              Matrice_lumiere[i][j] = Matrice_lumiere[i][j] - 1
+
+ for i in range(351, 952):
+     for j in range(678, 909):
+         Matrice_lumiere[i][j] = Matrice_lumiere[i][j] + 1
+
+ for i in range(720, 898):
+     for j in range(196, 995):
+        Matrice_lumiere[i][j] = Matrice_lumiere[i][j] + 2
+
+ for i in range(831, 905):
+     for j in range(394, 861):
+         Matrice_lumiere[i][j] = Matrice_lumiere[i][j] + 2
+
+
+count_mat = sum(sum(row) for row in Matrice_lumiere)
+print("Total brightness :", count_mat)
